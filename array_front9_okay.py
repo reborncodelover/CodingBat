@@ -16,3 +16,17 @@ def array_front9(nums):
 		if i == 4:
 			return False
 	return False
+
+# Alternate way 
+'''
+def array_front9(nums):
+	look_for = 9
+	if len(nums) < 4 and look_for in nums:
+		return True
+	elif look_for in nums[:4]:
+		return True
+	else:
+		return False
+
+'''
+
